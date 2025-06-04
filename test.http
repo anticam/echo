@@ -1,0 +1,25 @@
+@server=localhost:3000
+
+###
+GET http://{{server}} HTTP/1.1
+
+### 
+POST http://{{server}}/api/data HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "John Doe",
+  "age": 30
+}
+
+### 
+PUT http://{{server}}/api/data/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Jane Doe",
+  "age": 25
+}
+

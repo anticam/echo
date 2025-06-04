@@ -1,0 +1,8 @@
+---
+applications:
+- name: echo
+  random-route: true
+  path: echo
+  memory: 128M
+  buildpacks:
+  - nodejs_buildpack
